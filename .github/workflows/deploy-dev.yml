@@ -1,0 +1,25 @@
+name: Deploy Dev Branch
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: |
+          # Add commands to install dependencies (if any)
+
+      - name: Build and Deploy
+        run: |
+          # Add commands to build and deploy your application
+          # For example, deploy to a staging environment
+          echo "Deploying dev branch..."
+          # Add your deployment commands here
